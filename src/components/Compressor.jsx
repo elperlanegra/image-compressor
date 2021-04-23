@@ -62,11 +62,8 @@ export default class imageCompressor extends React.Component {
   render() {
     return (
       <div className="m-5">
-        <div className="text-light text-center">
-          <h1>Comprime tu Imagen en 3 pasos</h1>
-          <h3>1. Sube tu imagen</h3>
-          <h3>2. Click en comprimir</h3>
-          <h3>3. Descargar imagen comprimida</h3>
+        <div className="text-light text-center ">
+          <h1>Comprime tu Imagen</h1>
         </div>
 
         <div className="row mt-5">
@@ -81,7 +78,7 @@ export default class imageCompressor extends React.Component {
               <Card.Img
                 className="ht"
                 variant="top"
-                src="http://navparivartan.in/wp-content/uploads/2018/11/placeholder.png"
+                src={"/img/placeholder.png"}
               ></Card.Img>
             )}
             <div className="d-flex justify-content-center">
@@ -93,6 +90,7 @@ export default class imageCompressor extends React.Component {
               />
             </div>
           </div>
+
           <div className="col-xl-4 col-lg-4 col-md-12 mb-5 mt-5 col-sm-12 d-flex justify-content-center align-items-baseline">
             <br />
             {this.state.outputFileName ? (
