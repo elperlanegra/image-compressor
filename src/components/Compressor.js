@@ -1,6 +1,6 @@
 import React from "react";
 
-import imageCompression from "browser-image-compression";
+import imageCompression from 'browser-image-compression';
 
 export default class imageCompressor extends React.Component {
   constructor() {
